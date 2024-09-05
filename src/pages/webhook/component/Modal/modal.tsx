@@ -15,18 +15,18 @@ const Modal: React.FC<ModalProps> = ({ setOpenModal, openModal }) => {
 
   return (
     <div
-      className={`fixed bg-black top-0 left-0 cursor-default w-full h-screen flex justify-center items-center text-darkText transition-opacity duration-200 ${
+      className={`fixed bg-black text-left top-0 left-0 cursor-default w-full h-screen flex justify-center items-center text-darkText transition-opacity duration-200 ${
         openModal ? "bg-opacity-50 opacity-100" : "bg-opacity-0 opacity-0 pointer-events-none"
       }`}
     >
       <div
         className={`bg-white transform transition-transform duration-200 ease-in-out ${
           openModal ? "scale-100 opacity-100" : "scale-90 opacity-0"
-        } w-[37%] py-10 px-7 rounded-xl shadow-lg relative`}
+        } w-[44%] py-8 px-10 rounded-xl shadow-lg relative`}
       >
         <img
           src="/X.svg"
-          className="absolute right-6 top-4 cursor-pointer"
+          className="absolute right-5 top-[1.13rem] cursor-pointer"
           onClick={handleClose}
           alt="Close"
         />
